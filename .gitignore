@@ -1,8 +1,8 @@
 **/target
-**/.idea/
-**/.settings
-**/.gradle/
-**/*.iml
+./java/.idea/
+./java/.settings
+./java/.gradle/
+./java/*.iml
 **/.DS_Store
 **/.log
 

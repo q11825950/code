@@ -2,10 +2,11 @@ const puppeteer = require('/usr/local/lib/node_modules/puppeteer');
 
 (async () => {
     const browser = await puppeteer.launch({
-        headless: false
+        headless: true
     });
     const page = await browser.newPage();
-    await page.goto('https://www.zhihu.com/question/22263777');
+    // await page.goto('https://www.zhihu.com/question/22263777');
+    await page.goto('https://www.jianshu.com/p/3c5227ccc48a');
     // await page.goto('http://www.iqiyi.com');
     await page.setViewport({
         width: 1200,
@@ -14,10 +15,10 @@ const puppeteer = require('/usr/local/lib/node_modules/puppeteer');
 
     await autoScroll(page);
 
-    await page.screenshot({
-        path: '1.png',
-        fullPage: true
-    });
+    // await page.screenshot({
+    //     path: '1.png',
+    //     fullPage: true
+    // });
 
     await browser.close();
 })();
