@@ -81,7 +81,7 @@ def douban_ding():
         "Cookie": cookie
     }
     params = {
-        "rv_comment": 'ol',
+        "rv_comment": '🆙',
         "ck": re.findall("ck=(.*?);", headers["Cookie"])[-1],
         'start': '0',
         'submit_btn': '发送'
